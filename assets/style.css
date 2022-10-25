@@ -1,13 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-    --purple: #504dbb;
-    --lightpurple: #9e9dce;
-    --teal: #90d9de;
-    --darkblue: #1a203b;
-}
+@layer base {
+    :root{
+    --purple: rgb(80 77 187);
+    --neonpurple: rgb(105 98 249);
+    --lightpurple: rgb(158 157 206);
+    --teal: rgb(165 251 251);
+    --darkblue: rgb(26 32 59);
+}}
 * {
     margin:0;
     padding:0;
