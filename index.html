@@ -12,84 +12,63 @@
 </head>
 <body class="bg-[url('/assets/nightlife3.jpg')] bg-cover bg-no-repeat bg-center bg-top backdrop-blur-sm">
   
-     <!--top of the sidenav with logo-->
-    <div class="min-h-screen flex flex-row ">
-        <div class="flex flex-col w-80 bg-indigo-900 rounded-r-2xl overflow-hidden">
-          <div class="flex items-center justify-center h-40 shadow-md">
-            <h1 class="text-3xl uppercase text-indigo-500"></h1>
-            <img src="/assets/safenyt.png" width="500" height="100">
+<!--top of the sidenav with logo-->
+<div class="">
+    <div class="h-screen">
+        <div class="flex flex-col w-1/6 bg-indigo-900 rounded-r-2xl h-4/5">
+          <div class="flex items-center justify-center h-fit-content w-cover shadow-md ">
+            <h1 class="text-3xl uppercase text-indigo-500  "></h1>
+            <img src="/assets/safenyt.png" width="screen" height="full">
           </div>
-          <ul class="flex flex-col py-5">      
-<form>
-
-  <div class="flex">
-      <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Your Email</label>
-         <button id="dropdown-button" data-dropdown-toggle="dropdown" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-3 text-sm font-medium text-center
-         text-gray-900 bg-gray-100 border border-gray-300 rounded-l-xl hover:bg-gray-200 focus:ring-4 focus:outline-none 
-         focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" 
-         type="button">All categories <svg aria-hidden="true" class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" 
-         xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-         clip-rule="evenodd"></path></svg></button>
-       
-      <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700" 
-      data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; 
-      margin: 0px; transform: translate(0px, 10px);">
-          <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
-          <li>
-              <button type="button" class="inline-flex py-2 px-4 w-full hover:bg-gray-100 dark:hover:bg-cyan-100 dark:hover:text-white">Live Music</button>
-          </li>
-          <li>
-              <button type="button" class="inline-flex py-2 px-4 w-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bars and Pubs</button>
-          </li>
-          <li>
-              <button type="button" class="inline-flex py-2 px-4 w-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Shopping</button>
-          </li>
-          <li>
-              <button type="button" class="inline-flex py-2 px-4 w-full hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Restaurants</button>
-          </li>
-          </ul>
+          <ul class="flex flex-col py-5">  
+<!--searchbar-->              
+<form>   
+  <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+  <div class="relative">
+      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" 
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" 
+          stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
       </div>
-
-      <div class="relative w-full">
-          <input type="search" id="search-dropdown" class="block p-2.5 w-40 z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-indigo-500 
-          border-l-2 border border-cyan-100 focus:ring-blue-500 focus:border--500 dark:bg-gray-700 dark:border-l-indigo-500   dark:border-indigo-500 
-          dark:placeholder-cyan-50 dark:text-white dark:focus:border-blue=-500" placeholder="Type city here..." required="">
-          <button type="submit" class="absolute top-0 right-2.5 p-2.5 text-sm font-medium text-blue-900 bg-cyan-100 rounded-r-lg border 
-          border-indigo-500  hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              <svg aria-hidden="true" class="w-3 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-              <span class="sr-only">Search</span>
-          </button>
-      </div>
+      <input type="search" id="default-search" class="block p-4 pl-10 w-full text-sm text-gray-900 
+      bg-gray-50 rounded-lg border border-gray-300 focus:ring-cyan-100 focus:border-purple-400 
+      dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+      placeholder="Search by city, venue name, zipcode..." required>
+      <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-violet-400 hover:bg-cyan-200 
+      focus:ring-4 focus:outline-none focus:ring-blue-300 
+      font-medium rounded-lg text-sm px-4 py-2 dark:bg-purple-400 dark:hover:bg-violet-400 dark:focus:ring-violet-400">Search</button>
   </div>
 </form>
-         <!--sidenav-->
+<!--sidenav-->
 <li>
-              <a href="/index.html" class="flex flex-row items-center h-20 transform hover:translate-x-5 transition-transform ease-in duration-200 
+              <a href="/index.html" class="flex flex-row items-center h-30 transform hover:translate-x-5 transition-transform ease-in duration-200 
               text-violet-400 hover:text-cyan-100">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-cyan-50"><i class="bx bx-home"></i></span>
-                <span class="text-sm font-medium">Home</span>
-              </a>
+                <span class="text-sm font-medium">Home</span></a>
             </li>
             <li>
               <a href="https://tinyurl.com/musicnearme" class="flex flex-row items-center h-20 transform hover:translate-x-5 transition-transform ease-in duration-200 
               text-violet-400 hover:text-cyan-100">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-cyan-50"><i class="bx bx-music"></i></span>
-                <span class="text-sm font-medium">Live Music</span>
-              </a>
+                <span class="text-sm font-medium">Live Music</span></a>
             </li>
             <li>
               <a href="https://tinyurl.com/barsandpubsnearme" class="flex flex-row items-center h-20 transform hover:translate-x-5 transition-transform ease-in duration-200
                text-violet-400 hover:text-cyan-100">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-cyan-50"><i class="bx bx-drink"></i></span>
-                <span class="text-sm font-medium">Bars and Pubs</span>
-              </a>
+                <span class="text-sm font-medium">Bars and Pubs</span></a>
+            </li>
+            <li>
+              <a href="https://tinyurl.com/barsandpubsnearme" class="flex flex-row items-center h-20 transform hover:translate-x-5 transition-transform ease-in duration-200
+               text-violet-400 hover:text-cyan-100">
+                <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-cyan-50"><i class="bx bx-coffee"></i></span>
+                <span class="text-sm font-medium">Cafes</span></a>
             </li>
             <li>
               <a href="https://tinyurl.com/shoppingnearme" class="flex flex-row items-center h-20 transform hover:translate-x-5 transition-transform ease-in duration-200 
               text-violet-400 hover:text-cyan-100">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-cyan-50"><i class="bx bx-shopping-bag"></i></span>
-                <span class="text-sm font-medium">Shopping</span>
-              </a>
+                <span class="text-sm font-medium">Shopping</span></a>
             </li>
             <li>
               <a href="https://tinyurl.com/restaurantssnearme" class="flex flex-row items-center h-20 transform hover:translate-x-5 transition-transform ease-in duration-200
@@ -103,25 +82,24 @@
       </div>
 
    <!--header with map section underneath-->
-   <div class="container mx-auto absolute top-0 right-0
-   h-100px flex flex-row
-   px-4 border-l-cyan-100 bg-indigo-900
-   max-w-sm object-cover object-right-top
+      <div class="">
+    <div class="container mx-auto absolute top-0 right-0
+    h-fit-content w-5/6 flex flex-row rounded-lg
+   px-4 bg-indigo-900
    text-white">
     <h1>This will be a header</h1>
     <br>
   With some text content.</p>
   </div>
   <div class="container mx-auto absolute top-20 right-0
-  h-100px flex flex-row
-  px-4 border-l-indigo-500 bg-indigo-900
-  max-w-sm object-cover object-bottom-right
+  h-fit-content w-5/6 flex flex-row rounded-lg
+  px-4 bg-indigo-900
   text-white">
    <h1>This will be the map</h1>
    <br>
  With some text content.</p>
- </div>
-
+ </div></div>
+</div>
    <!--footer with testimonials-->
 
 
