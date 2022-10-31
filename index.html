@@ -94,7 +94,7 @@ With some text content.</p>
 <div class="container mx-auto absolute top-20 right-0
 h-fit-content w-5/6 flex flex-row rounded-lg
 px-4 bg-indigo-900
-text-white">
+text-white" id="map">
 <h1>This will be the map</h1>
 <br>
 With some text content.</p>
@@ -144,7 +144,10 @@ With some text content.</p>
             <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
         </svg>
       </div>
-
+     
+    <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ2C-bnOvVf1LWKDlWlQy0DSckI8OR-XI&libraries=localContext&v=beta&callback=initMap">
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/script.js"></script>
   </body>
