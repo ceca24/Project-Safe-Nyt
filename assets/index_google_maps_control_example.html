@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crimeometer map visualization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <!-- ######################## START Crimeometer embebed map style ######################## -->
+    <style>
+      /* Always set the map height and width explicitly to define the size of the div
+       * element that contains the map. */
+      #crimeometer-container {
+        height: 600px;
+        width: 800px; 
+        margin: 10px;
+        border: 2px solid; 
+        border-color: rgba(100,100,100,.7);
+        border-radius: 4px;
+      }
+      #crime-map {
+        height: 100%;
+        width: 100%; 
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <!--  ######################## END Crimeometer embebed map style ######################## -->
+  </head>
+  <body>
+    <!--  ######################## START Crimeometer embebed map code ######################## -->
+    <div id="crimeometer-container">
+      <div id="crime-map"></div>
+    </div>
+    <script src="crimeometer-data-visualization-kit/config/config.js"></script>
+    <script src="crimeometer-data-visualization-kit/js/icons.js"></script>
+    <script id="crimeometer-google-maps-control-v2" data-tk="YmYyN2Y3MDFlZGVlMzA1M2UzZjg0YzZkODA4OWNiYWQxNjlkYjc2OTljY2RkNmZmYWU1YjgyN2MxNDJkMjA2ODUzODRhYTkwYTg3NDM4Yjg4YjU1YjhkMWIwNzBkNGVlZDJkNzc1YmM1ZjdmZTUyMjRhY2E3ZDEzZDg3ZWE2OWE=" data-zoom="15" data-lat="37.753960" data-lon="-122.445154" data-distance="7mi" data-datetime-ini="2020-01-01 00:00:00" data-datetime-end="2020-11-24 00:00:00" data-max-incidents="500" src="crimeometer-data-visualization-kit/js/crimeometer-google-maps-control-v2.1.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_Dc5keulrNH_rCDTQVjiglqueDdCNMuQ&callback=initMap"></script>
+    <!--  ######################## END Crimeometer embebed map code ######################## -->
+  </body>
+</html>
