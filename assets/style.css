@@ -18,6 +18,10 @@
 body{
     background: var(--darkblue)
 }
+
+#map{
+    height: 100%;
+}
 .custom-shape-divider-bottom-1666909276 {
     position: absolute;
     bottom: 0;
