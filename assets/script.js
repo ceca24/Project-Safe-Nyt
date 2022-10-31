@@ -1,13 +1,26 @@
-// Use this key in your application by passing it with the key=API_KEY parameter.
+var searchEl = document.getElementById("default-search").value
 var APIkey = "AIzaSyCQ2C-bnOvVf1LWKDlWlQy0DSckI8OR-XI"
-// var searchEL = document.getElementbyID("")
-var queryURL = `https://www.google.com/maps/embed/v1/place?key=AIzaSyCQ2C-bnOvVf1LWKDlWlQy0DSckI8OR-XI
-&q=${SearchEl}`
 
-fetch(queryURL)
-    .then(res => res.json())
-    .then(data => console.log(data))
+let map;
 
+function initMap() {
+  const localContextMapView = new google.maps.localContext.LocalContextMapView({
+    element: document.getElementById("map"),
+    placeTypePreferences: [
+      { type: "restaurant" },
+      { type: "tourist_attraction" },
+    ],
+    maxPlaceCount: 12,
+  });
 
+  map = localContextMapView.map;
+  map.setOptions({
+    center: { lat: 51.507307, lng: -0.08114 },
+    zoom: 14,
+  });
+}
 
+window.initMap = initMap;
 
+//Crimeometer
+const x_api_key_level11 = "2X4xrZBDZf54VsUfgHEhl5KXKq6P4r975zhfrOhL";
