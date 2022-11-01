@@ -34,7 +34,10 @@ function initMap(lat, lng) {
       { type: "tourist_attraction" },
     ],
     maxPlaceCount: 12,
+    
   });
+
+  console.log(lat)
 
   map = localContextMapView.map;
   map.setOptions({
