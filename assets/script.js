@@ -2,6 +2,7 @@ var searchEl = document.getElementById("default-search")
 var btnEl = document.getElementById("btn")
 var googleAPIkey = "AIzaSyCQ2C-bnOvVf1LWKDlWlQy0DSckI8OR-XI"
 var geoAPIkey = "5238afc3f846ceadbc3c137f84bf5d39"
+var crimeAPIkey = "2X4xrZBDZf54VsUfgHEhl5KXKq6P4r975zhfrOhL"
 
 let map;
 
