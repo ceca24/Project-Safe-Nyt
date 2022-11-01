@@ -20,7 +20,7 @@ body{
 }
 
 #map{
-    height: 100%;
+    height: 87.5%;
 }
 .pixels{
     image-rendering: crisp-edges;
