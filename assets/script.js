@@ -21,6 +21,3 @@ function initMap() {
 }
 
 window.initMap = initMap;
-
-//Crimeometer
-const x_api_key_level11 = "2X4xrZBDZf54VsUfgHEhl5KXKq6P4r975zhfrOhL";
