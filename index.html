@@ -94,7 +94,15 @@ text-white">
 With some text content.</p>
 </div>
 
-<div class="container mx-auto absolute top-20 right-0
+<!--embedded map crimeometer-->
+<div class ="container mx-auto absolute top-20 right-0
+h-fit-content w-5/6 flex flex-row rounded-lg
+px-4 bg-indigo-900 text-white" id="crimeometer-container">
+  <div id="crime-map"></div>
+</div>
+
+
+<!-- <div class="container mx-auto absolute top-20 right-0
 h-fit-content w-5/6 flex flex-row rounded-lg
 px-4 bg-indigo-900
 text-white" id="map">
@@ -102,43 +110,92 @@ text-white" id="map">
 <br>
 With some text content.</p>
 </div>
-</div>
+</div> -->
 
 
-<!-- footer with testimonials -->
-<section class="text-slate-50 body-font h-16 absolute bottom-0">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-wrap -m-4">
-      <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-        <div class="h-full text-center">
-          <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-violet-400" src="/assets/user.png">
-          <p class="leading-relaxed">Five star review. :)</p>
-          <span class="inline-block h-1 w-10 rounded bg-violet-500 mt-6 mb-4"></span>
-          <h2 class="text-slate-50 font-medium title-font tracking-wider text-sm">John Doe</h2>
-          <p class="text-slate-50">Senior Product Designer</p>
-        </div>
+
+<!-- footer with testimonials and a div around wave thingy-->
+<div class="relative bottom">
+<div class="w-full flex flex-col md:flex-row gap-4 mb-8 md:mb-0 flex-between items-center p-8 absolute z-10">
+  <div class="bg-white dark:bg-gray-800 w-72 shadow-lg mx-auto rounded-xl p-4">
+      <p class="text-gray-600 dark:text-white">
+          <span class="font-bold text-indigo-500 text-lg">
+              “
+          </span>
+          Five star review ;)
+          <span class="font-bold text-indigo-500 text-lg">
+              ” ★★★★★
+          </span>
+      </p>
+      <div class="flex items-center mt-4">
+          <a href="#" class="block relative">
+              <img alt="profile" src="assets/user.png" class="mx-auto object-cover rounded-full h-10 w-10 "/>
+          </a>
+          <div class="flex flex-col ml-2 justify-between">
+              <span class="font-semibold text-indigo-500 text-sm">
+                  John Doe
+              </span>
+              <span class="dark:text-gray-400 text-xs flex items-center">
+                  User of Safe Nyt
+                  <img src="/icons/rocket.svg" class="ml-2 h-4 w-4"/>
+              </span>
+          </div>
       </div>
-      <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
-        <div class="h-full text-center">
-          <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-violet-400" src="/assets/user.png">
-          <p class="leading-relaxed">Five star review. :)</p>
-          <span class="inline-block h-1 w-10 rounded bg-violet-500 mt-6 mb-4"></span>
-          <h2 class="text-slate-50 font-medium title-font tracking-wider text-sm">John Doe</h2>
-          <p class="text-slate-50">Senior Product Designer</p>
-        </div>
-      </div>
-      <div class="lg:w-1/3 lg:mb-0 p-4">
-        <div class="h-full text-center">
-          <img alt="testimonial" class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-violet-400" src="/assets/user.png">
-          <p class="leading-relaxed">Five star review. :)</p>
-          <span class="inline-block h-1 w-10 rounded bg-violet-500 mt-6 mb-4"></span>
-          <h2 class="text-slate-50 font-medium title-font tracking-wider text-sm">John Doe</h2>
-          <p class="text-slate-50">Senior Product Designer</p>
-        </div>
-      </div>
-    </div>
   </div>
-</section>
+  <div class="bg-white dark:bg-gray-800 w-72 shadow-lg mx-auto rounded-xl p-4">
+      <p class="text-gray-600 dark:text-white">
+          <span class="font-bold text-indigo-500 text-lg">
+              “
+          </span>
+          Five star review ;)
+          <span class="font-bold text-indigo-500 text-lg">
+              ” ★★★★★
+          </span>
+      </p>
+      <div class="flex items-center mt-4">
+          <a href="#" class="block relative">
+              <img alt="profile" src="assets/user.png" class="mx-auto object-cover rounded-full h-10 w-10 "/>
+          </a>
+          <div class="flex flex-col ml-2 justify-between">
+              <span class="font-semibold text-indigo-500 text-sm">
+                  Jane Doe
+              </span>
+              <span class="dark:text-gray-400 text-xs flex items-center">
+                User of Safe Nyt
+                  <img src="/icons/rocket.svg" class="ml-2 h-4 w-4"/>
+              </span>
+          </div>
+      </div>
+  </div>
+  <div class="bg-white dark:bg-gray-800 w-72 shadow-lg mx-auto rounded-xl p-4">
+      <p class="text-gray-600 dark:text-white">
+          <span class="font-bold text-indigo-500 text-lg">
+              “
+          </span>
+          Five star review ;)
+          <span class="font-bold text-indigo-500 text-lg">
+              ” ★★★★★
+          </span>
+      </p>
+      <div class="flex items-center mt-4">
+          <a href="#" class="block relative">
+              <img alt="profile" src="assets/user.png" class="mx-auto object-cover rounded-full h-10 w-10 "/>
+          </a>
+          <div class="flex flex-col ml-2 justify-between">
+              <span class="font-semibold text-indigo-500 text-sm">
+                  Jean Miguel
+              </span>
+              <span class="dark:text-gray-400 text-xs flex items-center">
+                User of Safe Nyt
+                  <img src="/icons/rocket.svg" class="ml-2 h-4 w-4"/>
+              </span>
+          </div>
+      </div>
+  </div>
+</div>
+<!--wave thingy-->
+<img title="wave thingy" class="pixels w-full absolute z-0" src="assets/wave.png">
+</div>
 
      
       <!--Google API-->
