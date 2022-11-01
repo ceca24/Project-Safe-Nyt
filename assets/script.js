@@ -16,7 +16,7 @@ function formHandler(event) {
 }
 
 function geocodeCall(cityValue) {
-    var queryURL = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&limit=5&appid=${geoAPIkey}`
+    var queryURL = `https://api.openweathermap.org/geo/1.0/direct?q=${cityValue}&limit=5&appid=${geoAPIkey}`
 
     fetch(queryURL)
         .then(response=> response.json())
