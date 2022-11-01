@@ -6,10 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
-    <link href="/dist/output.css" rel="stylesheet">
+    
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
     <title>Safe Nyt: Your peace of mind out on the town.</title>
-</head>
+
+<!--Crimeometer styling; not sure that we need this here with it in the other index-->
+    <!-- ######################## START Crimeometer embebed map style ######################## -->
+    <style>
+      /* Always set the map height and width explicitly to define the size of the div
+       * element that contains the map. */
+      #crimeometer-container {
+        height: 600px;
+        width: 800px; 
+        margin: 10px;
+        border: 2px solid; 
+        border-color: rgba(100,100,100,.7);
+        border-radius: 4px;
+      }
+      #crime-map {
+        height: 100%;
+        width: 100%; 
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <!--  ######################## END Crimeometer embebed map style ######################## -->
+
+
+  </head>
 <!--background with blur-->
 <body class="bg-[url('/assets/nightlife3.jpg')] bg-cover bg-no-repeat bg-center bg-top backdrop-blur-sm">
 
@@ -91,10 +120,17 @@ text-white">
 <br>
 With some text content.</p>
 </div>
-<div class="container mx-auto absolute top-20 right-0
+
+<!--embedded map crimeometer-->
+<div id="crimeometer-container">
+  <div id="crime-map"></div>
+</div>
+
+
+<!-- <div class="container mx-auto absolute top-20 right-0
 h-fit-content w-5/6 flex flex-row rounded-lg
 px-4 bg-indigo-900
-text-white" id="map">
+text-white" id="map"> -->
 <h1>This will be the map</h1>
 <br>
 With some text content.</p>
@@ -145,19 +181,31 @@ With some text content.</p>
         </svg>
       </div>
      
-
       <!--Google API-->
     <!-- <script async
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ2C-bnOvVf1LWKDlWlQy0DSckI8OR-XI&libraries=localContext&v=beta&callback=initMap">
     </script> -->
     <!--Crimeometer API-->
-        <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ2C-bnOvVf1LWKDlWlQy0DSckI8OR-XI&libraries=localContext&v=beta&callback=initMap">
+      <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ2C-bnOvVf1LWKDlWlQy0DSckI8OR-XI&libraries=localContext&v=beta&callback=initMap">
       </script>
       <script src="./assets/crimeometer-data-visualization-kit/config/config.js"></script>"    
       <script src = "./assets/crimeometer-data-visualization-kit/js/icons.js"></script>
-      <!--tailwind-->
+      <script id = "crimeometer-google-maps-control-v2"
+      data-zoom="="15"
+
+      data-lat="30.2672"
+      data-lon="97.7431"
+      data-distance="15mi"
+      data-datetime-ini="2021-10-31 00:00:00"
+      data-datetime-end="2022-10-31 00:00:00"
+      data-max-incidents="500"
+      src="./assets/crimeometer-data-visualization-kit/js/crimeometer-google-maps-control-v2.1.js"></script>
+    <!--tailwind-->
       <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ2C-bnOvVf1LWKDlWlQy0DSckI8OR-XI&libraries=localContext&v=beta&callback=initMap">
+    </script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/script.js"></script>
   </body>
 </html>
